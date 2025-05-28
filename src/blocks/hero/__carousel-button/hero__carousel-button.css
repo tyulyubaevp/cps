@@ -1,0 +1,19 @@
+.hero__carousel-button {
+  padding: 6px 15.54px;
+  border-radius: 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  flex-shrink: 0;
+    color: #7e7e82;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__carousel-button {
+    padding: 6px 19px;
+  }
+}

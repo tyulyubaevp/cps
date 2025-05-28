@@ -1,0 +1,39 @@
+.hero__carousel-container {
+  position: relative;
+  padding: 0 16px;
+  margin-bottom: 24px;
+}
+
+.hero__carousel-container::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  background: linear-gradient(to left, #f8f8f8 30%, transparent);
+  right: 0;
+  top: 0;
+}
+
+.hero__carousel-container::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  background: linear-gradient(to right, #f8f8f8 30%, transparent);
+  left: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__carousel-container {
+    padding: 0 24px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__carousel-container {
+    padding: 0 0 0 32px;
+    margin-bottom: 23px;
+  }
+}

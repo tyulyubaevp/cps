@@ -1,0 +1,61 @@
+@import url('./src/vendor/normalize.css');
+@import url('./src/vendor/fonts/fonts.css');
+
+@import url('./src/blocks/header/header.css');
+@import url('./src/blocks/header/__container/header__container.css');
+@import url('./src/blocks/header/__left/header__left.css');
+@import url('./src/blocks/header/__right/header__right.css');
+@import url('./src/blocks/header/__icon/header__icon.css');
+@import url('./src/blocks/header/__icon/_tablet/header__icon_tablet.css');
+@import url('./src/blocks/header/__logo-container/header__logo-container.css');
+@import url('./src/blocks/header/__logo/header__logo.css');
+@import url('./src/blocks/header/__divider/header__divider.css');
+@import url('./src/blocks/header/__divider/_left/header__divider_left.css');
+@import url('./src/blocks/header/__icon-group/header__icon-group.css');
+@import url('./src/blocks/header/__icon-group/__left/header__icon-group_left.css');
+
+@import url('./src/blocks/hero/hero.css');
+@import url('./src/blocks/hero/__container/hero__container.css');
+@import url('./src/blocks/hero/__carousel/hero__carousel.css');
+@import url('./src/blocks/hero/__carousel-button/hero__carousel-button.css');
+@import url('./src/blocks/hero/__carousel-button/_active/hero__carousel-button_active.css');
+@import url('./src/blocks/hero/__carousel-container/hero__carousel-container.css');
+@import url('./src/blocks/hero/__info/hero__info.css');
+@import url('./src/blocks/hero/__title/hero__title.css');
+@import url('./src/blocks/hero/__text/hero__text.css');
+@import url('./src/blocks/hero/__text-container/hero__text-container.css');
+@import url('./src/blocks/hero/__more-button/hero__more-button.css');
+@import url('./src/blocks/hero/__expand-icon/hero__expand-icon.css');
+@import url('./src/blocks/hero/__read-more/hero__read-more.css');
+@import url('./src/blocks/hero/___image-container/hero__image-container.css');
+@import url('./src/blocks/hero/__image/hero__image.css');
+@import url('./src/blocks/hero/__content/hero__content.css');
+@import url('./src/blocks/hero/__text/_second/hero__text_second.css');
+@import url('./src/blocks/hero/__text/_third/hero__text_third.css');
+@import url('./src/blocks/hero/__top/hero__top.css');
+@import url('./src/blocks/hero/__buttons/hero__buttons.css');
+@import url('./src/blocks/hero/__button/hero__button.css');
+@import url('./src/blocks/hero/__icon-text/hero__icon-text.css');
+@import url('./src/blocks/hero/__icon/hero__icon.css');
+
+:root {
+  --icon-color: #ff3e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: 'TT Lakes';
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}

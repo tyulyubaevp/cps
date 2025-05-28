@@ -1,0 +1,9 @@
+.hero__text_third {
+  display: none;
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__text_third {
+    display: block;
+  }
+}

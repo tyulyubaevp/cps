@@ -1,0 +1,11 @@
+.hero__buttons {
+  display: none;
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__buttons {
+    display: flex;
+    column-gap: 32px;
+    margin-bottom: 6px;
+  }
+}

@@ -1,0 +1,15 @@
+.hero__text-container {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__text-container {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__text-container {
+    margin-bottom: 13.78px;
+  }
+}

@@ -1,0 +1,10 @@
+.hero__container {
+  padding: 24px 0 35px;
+  background-color: #f8f8f8;
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__container {
+    padding: 42px 32px 49px 0;
+  }
+}

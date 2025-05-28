@@ -1,0 +1,35 @@
+.hero__title {
+  padding-left: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.hero__title::before {
+  content: '';
+  position: absolute;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 4px;
+  background-color: #41f6d7;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    padding-left: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__title {
+    padding-left: 33px;
+    margin-bottom: 8px;
+  }
+}
