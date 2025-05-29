@@ -1,7 +1,6 @@
 .hero__carousel-container {
   position: relative;
   padding: 0 16px;
-  margin-bottom: 24px;
 }
 
 .hero__carousel-container::after {
@@ -27,13 +26,11 @@
 @media screen and (min-width: 768px) {
   .hero__carousel-container {
     padding: 0 24px;
-    margin-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .hero__carousel-container {
     padding: 0 0 0 32px;
-    margin-bottom: 23px;
   }
 }

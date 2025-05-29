@@ -1,6 +1,13 @@
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .hero__info {
     display: flex;
+    flex-direction: row;
     column-gap: 48px;
     padding: 0 24px;
   }

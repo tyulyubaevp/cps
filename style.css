@@ -54,8 +54,4 @@ p {
 
 body {
   font-family: 'TT Lakes';
-  max-width: 1120px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
 }

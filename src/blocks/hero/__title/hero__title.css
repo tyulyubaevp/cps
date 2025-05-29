@@ -4,7 +4,6 @@
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.6px;
-  margin-bottom: 24px;
   position: relative;
 }
 
@@ -23,13 +22,11 @@
 @media screen and (min-width: 768px) {
   .hero__title {
     padding-left: 24px;
-    margin-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .hero__title {
     padding-left: 33px;
-    margin-bottom: 8px;
   }
 }

@@ -1,9 +1,19 @@
 .hero__content {
   padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .hero__content {
     padding: 0;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__content {
+    row-gap: 13.78px;
   }
 }
