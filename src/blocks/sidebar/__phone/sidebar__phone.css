@@ -1,0 +1,14 @@
+.sidebar__phone {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar__phone:hover {
+  color: #7e7e82;
+  transition: color 0.3s;
+}

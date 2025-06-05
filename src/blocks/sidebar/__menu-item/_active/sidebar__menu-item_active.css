@@ -1,0 +1,16 @@
+.sidebar__menu-item_active {
+  color: #7e7e82;
+}
+
+.sidebar__menu-item_active::before {
+  content: '';
+  position: absolute;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  left: -24px;
+  top: 50%;
+  height: 32px;
+  width: 4px;
+  background-color: #41f6d7;
+  transform: translateY(-50%);
+}

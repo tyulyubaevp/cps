@@ -1,0 +1,15 @@
+.sidebar__language-button {
+  all: unset;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar__language-button:hover {
+  color: #7e7e82;
+  transition: color 0.3s;
+}

@@ -38,6 +38,29 @@
 @import url('./src/blocks/hero/__icon-text/hero__icon-text.css');
 @import url('./src/blocks/hero/__icon/hero__icon.css');
 
+@import url('./src/blocks/sidebar/sidebar.css');
+@import url('./src/blocks/sidebar/__container/sidebar__container.css');
+@import url('./src/blocks/sidebar/__header/sidebar__header.css');
+@import url('./src/blocks/sidebar/__header-left/sidebar__header-left.css');
+@import url('./src/blocks/sidebar/__header-right/sidebar__header-right.css');
+@import url('./src/blocks/sidebar/__icon/sidebar__icon.css');
+@import url('./src/blocks/sidebar/__logo-container/sidebar__logo-container.css');
+@import url('./src/blocks/sidebar/__logo/sidebar__logo.css');
+@import url('./src/blocks/sidebar/__menu/sidebar__menu.css');
+@import url('./src/blocks/sidebar/__menu-list/sidebar__menu-list.css');
+@import url('./src/blocks/sidebar/__menu-item/sidebar__menu-item.css');
+@import url('./src/blocks/sidebar/__menu-item/_active/sidebar__menu-item_active.css');
+@import url('./src/blocks/sidebar/__footer/sidebar__footer.css');
+@import url('./src/blocks/sidebar/__footer-top/sidebar__footer-top.css');
+@import url('./src/blocks/sidebar/__footer-bottom/sidebar__footer-bottom.css');
+@import url('./src/blocks/sidebar/__footer-icons/sidebar__footer-icons.css');
+@import url('./src/blocks/sidebar/__footer-contacts/sidebar__footer-contacts.css');
+@import url('./src/blocks/sidebar/__email/sidebar__email.css');
+@import url('./src/blocks/sidebar/__phone/sidebar__phone.css');
+@import url('./src/blocks/sidebar/__language-container/sidebar__language-container.css');
+@import url('./src/blocks/sidebar/__language-button/sidebar__language-button.css');
+@import url('./src/blocks/sidebar/__language-button/_active/sidebar__language-button_active.css');
+
 :root {
   --icon-color: #ff3e79;
 }
@@ -48,8 +71,11 @@
 
 h1,
 h2,
-p {
+p,
+ul,
+li {
   margin: 0;
+  padding: 0;
 }
 
 body {
