@@ -60,6 +60,7 @@
 @import url('./src/blocks/sidebar/__language-container/sidebar__language-container.css');
 @import url('./src/blocks/sidebar/__language-button/sidebar__language-button.css');
 @import url('./src/blocks/sidebar/__language-button/_active/sidebar__language-button_active.css');
+@import url('./src/blocks/sidebar-overlay/sidebar-overlay.css');
 
 :root {
   --icon-color: #ff3e79;

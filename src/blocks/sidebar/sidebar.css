@@ -8,6 +8,7 @@
   left: 0;
   top: 0;
   box-shadow: 16px 0 52px #0e185033;
+  z-index: 999;
 }
 
 @media screen and (min-width: 1120px) {
