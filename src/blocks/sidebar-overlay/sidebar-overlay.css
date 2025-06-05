@@ -8,3 +8,9 @@
   z-index: 998;
   opacity: 96.05%;
 }
+
+@media screen and (min-width: 1120px) {
+  .sidebar-overlay {
+    display: none;
+  }
+}
