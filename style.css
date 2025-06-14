@@ -147,6 +147,8 @@ body {
 #pagination .swiper-pagination-bullet {
   background-color: #dddddd;
   opacity: 1;
+  width: 12px;
+  height: 12px;
 }
 
 #pagination .swiper-pagination-bullet-active {
@@ -162,6 +164,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 224px);
     gap: 16px 24px;
+    transform: none !important;
   }
 
   #swiper .swiper-slide {
@@ -169,6 +172,10 @@ body {
   }
 
   #swiper .swiper-slide.hidden {
+    display: none;
+  }
+
+  #pagination {
     display: none;
   }
 }

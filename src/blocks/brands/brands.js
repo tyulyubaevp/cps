@@ -5,34 +5,51 @@ const toggleBrandsButton = document.querySelector('.brands__more-button')
 const toggleBrandsButtonText = toggleBrandsButton.querySelector('.brands__more-button-text')
 const toggleBrandsButtonExpandIcon = toggleBrandsButton.querySelector('.brands__expand-icon')
 let expanded = false;
+let swiper = null;
 
-const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: false,
+function toggleSwiper() {
+    const isMobile = window.innerWidth < 768
+
+    if (isMobile && !swiper) {
+        swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: false,
 
 
-    pagination: {
-        clickable: true,
-        el: '.swiper-pagination',
-    },
+            pagination: {
+                clickable: true,
+                el: '.swiper-pagination',
+            },
 
-    grabCursor: true,
+            grabCursor: true,
 
-    breakpoints: {
-        320: {
-            slidesPerView: 'auto',
-            spaceBetween: 16,
-            enabled: true,
-        },
+            breakpoints: {
+                320: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16,
+                    enabled: true,
+                },
 
-        768: {
-            enabled: false,
-            slidesPerView: 3,
-            spaceBetween: 0,
-        },
-    },
+                768: {
+                    enabled: false,
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+            },
 
-})
+        })
+    }
+
+    if (!isMobile && swiper) {
+        swiper.destroy(true, true)
+        swiper = null
+    }
+
+}
+
+window.addEventListener('load', toggleSwiper)
+window.addEventListener('resize', toggleSwiper)
+
 
 function toggleBrands() {
     let limit = 5
