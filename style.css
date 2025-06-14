@@ -26,7 +26,7 @@
 @import url('./src/blocks/hero/__text-container/hero__text-container.css');
 @import url('./src/blocks/hero/__more-button/hero__more-button.css');
 @import url('./src/blocks/hero/__expand-icon/hero__expand-icon.css');
-@import url('./src/blocks/hero/__read-more/hero__read-more.css');
+@import url('./src/blocks/hero/__more-button-text/hero__more-button-text.css');
 @import url('./src/blocks/hero/___image-container/hero__image-container.css');
 @import url('./src/blocks/hero/__image/hero__image.css');
 @import url('./src/blocks/hero/__content/hero__content.css');
@@ -75,7 +75,7 @@
 @import url('./src/blocks/brands/__card-button/brands__card-button.css');
 @import url('./src/blocks/brands/__card-button-icon/brands__card-button-icon.css');
 @import url('./src/blocks/brands/__more-button/brands__more-button.css');
-@import url('./src/blocks/brands/__show-more/brands__show-more.css');
+@import url('./src/blocks/brands/__more-button-text/brands__more-button-text.css');
 @import url('./src/blocks/brands/__expand-icon/brands__expand-icon.css');
 @import url('./src/blocks/brands/__expand-icon/_active/brands__expand-icon_active.css');
 

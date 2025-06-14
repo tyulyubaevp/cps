@@ -2,7 +2,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs
 
 const brands = document.querySelectorAll('.brands__brand-card')
 const toggleBrandsButton = document.querySelector('.brands__more-button')
-const toggleBrandsButtonText = toggleBrandsButton.querySelector('.brands__show-more')
+const toggleBrandsButtonText = toggleBrandsButton.querySelector('.brands__more-button-text')
 const toggleBrandsButtonExpandIcon = toggleBrandsButton.querySelector('.brands__expand-icon')
 let expanded = false;
 
