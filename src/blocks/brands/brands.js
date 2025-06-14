@@ -6,20 +6,44 @@ const toggleBrandsButtonText = toggleBrandsButton.querySelector('.brands__more-b
 const toggleBrandsButtonExpandIcon = toggleBrandsButton.querySelector('.brands__expand-icon')
 let expanded = false;
 let swiper = null;
+let limit = 6;
+
+function updateVisibleCardsLimit() {
+    limit = window.innerWidth < 1120 ? 6 : 8
+}
+
+function showCards() {
+
+    brands.forEach((brandCard, index) => {
+        if (!expanded && index >= limit) {
+            brandCard.classList.add('hidden')
+        } else {
+            brandCard.classList.remove('hidden')
+        }
+    })
+
+    toggleBrandsButtonExpandIcon.classList.toggle('brands__expand-icon_active', expanded)
+    toggleBrandsButtonText.textContent = expanded ? 'Скрыть' : 'Показать всё'
+}
+
+function toggleBrands() {
+    expanded = !expanded
+    showCards()
+}
 
 function toggleSwiper() {
     const isMobile = window.innerWidth < 768
+
+    updateVisibleCardsLimit()
 
     if (isMobile && !swiper) {
         swiper = new Swiper('.swiper', {
             direction: 'horizontal',
             loop: false,
-
             pagination: {
                 clickable: true,
                 el: '.swiper-pagination',
             },
-
             grabCursor: true,
             slidesPerView: 'auto',
             spaceBetween: 16,
@@ -31,46 +55,9 @@ function toggleSwiper() {
         swiper = null
     }
 
+    showCards();
 }
-
-window.addEventListener('load', toggleSwiper)
-window.addEventListener('resize', toggleSwiper)
-
-
-function toggleBrands() {
-    let limit = 5
-
-    if (window.innerWidth < 1120) {
-        limit = 5
-    } else {
-        limit = 7
-    }
-
-    if (!expanded) {
-        brands.forEach((brandCard, index) => {
-            if (index > limit) {
-                brandCard.classList.add('hidden')
-            }
-        })
-
-        toggleBrandsButtonExpandIcon.classList.remove('brands__expand-icon_active')
-        toggleBrandsButtonText.textContent = 'Показать всё'
-    }
-
-    if (expanded) {
-        brands.forEach((brandCard, index) => {
-            if (index > limit) {
-                brandCard.classList.remove('hidden')
-            }
-        })
-
-        toggleBrandsButtonExpandIcon.classList.add('brands__expand-icon_active')
-        toggleBrandsButtonText.textContent = 'Скрыть'
-    }
-
-    expanded = !expanded
-}
-
-toggleBrands()
 
 toggleBrandsButton.addEventListener('click', toggleBrands)
+window.addEventListener('load', toggleSwiper)
+window.addEventListener('resize', toggleSwiper)
