@@ -15,28 +15,14 @@ function toggleSwiper() {
             direction: 'horizontal',
             loop: false,
 
-
             pagination: {
                 clickable: true,
                 el: '.swiper-pagination',
             },
 
             grabCursor: true,
-
-            breakpoints: {
-                320: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 16,
-                    enabled: true,
-                },
-
-                768: {
-                    enabled: false,
-                    slidesPerView: 3,
-                    spaceBetween: 0,
-                },
-            },
-
+            slidesPerView: 'auto',
+            spaceBetween: 16,
         })
     }
 
