@@ -1,0 +1,73 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+const brands = document.querySelectorAll('.brands__brand-card')
+const toggleBrandsButton = document.querySelector('.brands__more-button')
+const toggleBrandsButtonText = toggleBrandsButton.querySelector('.brands__show-more')
+const toggleBrandsButtonExpandIcon = toggleBrandsButton.querySelector('.brands__expand-icon')
+let expanded = false;
+
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: false,
+
+
+    pagination: {
+        clickable: true,
+        el: '.swiper-pagination',
+    },
+
+    grabCursor: true,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            enabled: true,
+        },
+
+        768: {
+            enabled: false,
+            slidesPerView: 3,
+            spaceBetween: 0,
+        },
+    },
+
+})
+
+function toggleBrands() {
+    let limit = 5
+
+    if (window.innerWidth < 1120) {
+        limit = 5
+    } else {
+        limit = 7
+    }
+
+    if (!expanded) {
+        brands.forEach((brandCard, index) => {
+            if (index > limit) {
+                brandCard.classList.add('hidden')
+            }
+        })
+
+        toggleBrandsButtonExpandIcon.classList.remove('brands__expand-icon_active')
+        toggleBrandsButtonText.textContent = 'Показать всё'
+    }
+
+    if (expanded) {
+        brands.forEach((brandCard, index) => {
+            if (index > limit) {
+                brandCard.classList.remove('hidden')
+            }
+        })
+
+        toggleBrandsButtonExpandIcon.classList.add('brands__expand-icon_active')
+        toggleBrandsButtonText.textContent = 'Скрыть'
+    }
+
+    expanded = !expanded
+}
+
+toggleBrands()
+
+toggleBrandsButton.addEventListener('click', toggleBrands)

@@ -1,0 +1,5 @@
+.sidebar__top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}

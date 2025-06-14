@@ -1,0 +1,23 @@
+.brands__title {
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+  border-top: 1px solid #d9fff5;
+}
+
+@media screen and (min-width: 768px) {
+  .brands__title {
+    padding: 16px 24px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .brands__title {
+    padding: 16px 32px;
+  }
+}

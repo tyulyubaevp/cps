@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CPS</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -104,6 +105,119 @@
           </div>
         </div>
       </section>
+      <section class="brands">
+        <div class="brands__container">
+          <h2 class="brands__title">Ремонт техники различных брендов</h2>
+          <div class="swiper" id="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/lenovo.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/samsung.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/apple.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/viewsonic.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/bosch.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/hp.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/acer.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/sony.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/lenovo.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/samsung.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+              <div class="swiper-slide brands__brand-card">
+                <div class="brands__logo-container">
+                  <img class="brands__logo" src="./src/assets/brand-logos/apple.svg" />
+                </div>
+
+                <button class="brands__card-button">
+                  <img src="./src/assets/arrow-right-icon.svg" />
+                </button>
+              </div>
+            </div>
+            <div class="swiper-pagination" id="pagination"></div>
+          </div>
+          <div class="brands__more-button">
+            <img class="brands__expand-icon" src="./src/assets/expand-icon.svg" />
+            <p class="brands__show-more">Показать все</p>
+          </div>
+        </div>
+      </section>
       <!-- <section class="sidebar">
         <div class="sidebar__container">
           <div class="sidebar__top">
@@ -167,5 +281,7 @@
       </section>
       <div class="sidebar-overlay"></div> -->
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/blocks/brands/brands.js" type="module"></script>
   </body>
 </html>

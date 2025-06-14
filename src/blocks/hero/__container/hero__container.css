@@ -1,6 +1,5 @@
 .hero__container {
   padding: 24px 0 35px;
-  background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
