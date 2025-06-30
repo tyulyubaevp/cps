@@ -1,0 +1,196 @@
+@import url('./vendor/normalize.css');
+@import url('./assets/fonts/fonts.css');
+
+@import url('./blocks/header/header.css');
+@import url('./blocks/header/__container/header__container.css');
+@import url('./blocks/header/__left/header__left.css');
+@import url('./blocks/header/__right/header__right.css');
+@import url('./blocks/header/__icon/header__icon.css');
+@import url('./blocks/header/__icon/_tablet/header__icon_tablet.css');
+@import url('./blocks/header/__logo-container/header__logo-container.css');
+@import url('./blocks/header/__logo/header__logo.css');
+@import url('./blocks/header/__divider/header__divider.css');
+@import url('./blocks/header/__divider/_left/header__divider_left.css');
+@import url('./blocks/header/__icon-group/header__icon-group.css');
+@import url('./blocks/header/__icon-group/__left/header__icon-group_left.css');
+
+@import url('./blocks/hero/hero.css');
+@import url('./blocks/hero/__container/hero__container.css');
+@import url('./blocks/hero/__carousel/hero__carousel.css');
+@import url('./blocks/hero/__carousel-button/hero__carousel-button.css');
+@import url('./blocks/hero/__carousel-button/_active/hero__carousel-button_active.css');
+@import url('./blocks/hero/__carousel-container/hero__carousel-container.css');
+@import url('./blocks/hero/__info/hero__info.css');
+@import url('./blocks/hero/__title/hero__title.css');
+@import url('./blocks/hero/__text/hero__text.css');
+@import url('./blocks/hero/__text-container/hero__text-container.css');
+@import url('./blocks/hero/__more-button/hero__more-button.css');
+@import url('./blocks/hero/__expand-icon/hero__expand-icon.css');
+@import url('./blocks/hero/__more-button-text/hero__more-button-text.css');
+@import url('./blocks/hero/___image-container/hero__image-container.css');
+@import url('./blocks/hero/__image/hero__image.css');
+@import url('./blocks/hero/__content/hero__content.css');
+@import url('./blocks/hero/__text/_second/hero__text_second.css');
+@import url('./blocks/hero/__text/_third/hero__text_third.css');
+@import url('./blocks/hero/__top/hero__top.css');
+@import url('./blocks/hero/__buttons/hero__buttons.css');
+@import url('./blocks/hero/__button/hero__button.css');
+@import url('./blocks/hero/__icon-text/hero__icon-text.css');
+@import url('./blocks/hero/__icon/hero__icon.css');
+
+@import url('./blocks/sidebar/sidebar.css');
+@import url('./blocks/sidebar/__container/sidebar__container.css');
+@import url('./blocks/sidebar/__header/sidebar__header.css');
+@import url('./blocks/sidebar/__header-left/sidebar__header-left.css');
+@import url('./blocks/sidebar/__header-right/sidebar__header-right.css');
+@import url('./blocks/sidebar/__top/sidebar__top.css');
+@import url('./blocks/sidebar/__icon/sidebar__icon.css');
+@import url('./blocks/sidebar/__logo-container/sidebar__logo-container.css');
+@import url('./blocks/sidebar/__logo/sidebar__logo.css');
+@import url('./blocks/sidebar/__menu/sidebar__menu.css');
+@import url('./blocks/sidebar/__menu-list/sidebar__menu-list.css');
+@import url('./blocks/sidebar/__menu-item/sidebar__menu-item.css');
+@import url('./blocks/sidebar/__menu-item/_active/sidebar__menu-item_active.css');
+@import url('./blocks/sidebar/__footer/sidebar__footer.css');
+@import url('./blocks/sidebar/__footer-top/sidebar__footer-top.css');
+@import url('./blocks/sidebar/__footer-bottom/sidebar__footer-bottom.css');
+@import url('./blocks/sidebar/__footer-icons/sidebar__footer-icons.css');
+@import url('./blocks/sidebar/__footer-contacts/sidebar__footer-contacts.css');
+@import url('./blocks/sidebar/__email/sidebar__email.css');
+@import url('./blocks/sidebar/__phone/sidebar__phone.css');
+@import url('./blocks/sidebar/__language-container/sidebar__language-container.css');
+@import url('./blocks/sidebar/__language-button/sidebar__language-button.css');
+@import url('./blocks/sidebar/__language-button/_active/sidebar__language-button_active.css');
+@import url('./blocks/sidebar-overlay/sidebar-overlay.css');
+
+@import url('./blocks/brands/brands.css');
+@import url('./blocks/brands/__title/brands__title.css');
+@import url('./blocks/brands/__container/brands__container.css');
+@import url('./blocks/brands/__slider/brands__slider.css');
+@import url('./blocks/brands/__slider-wrapper/brands__slider-wrapper.css');
+@import url('./blocks/brands/__slide/brands__slide.css');
+@import url('./blocks/brands/__brand-card/brands__brand-card.css');
+@import url('./blocks/brands/__logo-container/brands__logo-container.css');
+@import url('./blocks/brands/__logo/brands__logo.css');
+@import url('./blocks/brands/__card-button/brands__card-button.css');
+@import url('./blocks/brands/__card-button-icon/brands__card-button-icon.css');
+@import url('./blocks/brands/__more-button/brands__more-button.css');
+@import url('./blocks/brands/__more-button-text/brands__more-button-text.css');
+@import url('./blocks/brands/__expand-icon/brands__expand-icon.css');
+@import url('./blocks/brands/__expand-icon/_active/brands__expand-icon_active.css');
+
+:root {
+  --icon-color: #ff3e79;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'TT Lakes';
+  background-color: #f8f8f8;
+}
+
+#swiper {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 100%;
+}
+
+#swiper::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  background: linear-gradient(to left, #f8f8f8 30%, transparent);
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+
+#swiper::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  background: linear-gradient(to right, #f8f8f8 30%, transparent);
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+
+#swiper .swiper-slide {
+  max-width: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 72px;
+}
+
+#pagination {
+  position: static;
+}
+
+#pagination .swiper-pagination-bullet {
+  background-color: #dddddd;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+#pagination .swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+@media screen and (min-width: 768px) {
+  #swiper {
+    padding: 0 24px;
+  }
+
+  #swiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 224px);
+    gap: 16px 24px;
+    transform: none !important;
+  }
+
+  #swiper .swiper-slide {
+    max-width: 224px;
+  }
+
+  #swiper .swiper-slide.hidden {
+    display: none;
+  }
+
+  #pagination {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  #swiper {
+    padding: 0 32px;
+  }
+
+  #swiper .swiper-wrapper {
+    grid-template-columns: repeat(4, 240px);
+    gap: 16px 32px;
+  }
+
+  #swiper .swiper-slide {
+    max-width: 240px;
+  }
+}

@@ -1,4 +1,7 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+import Swiper from 'swiper'
+import { Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 const brands = document.querySelectorAll('.brands__brand-card')
 const toggleBrandsButton = document.querySelector('.brands__more-button')
@@ -38,6 +41,7 @@ function toggleSwiper() {
 
     if (isMobile && !swiper) {
         swiper = new Swiper('.swiper', {
+            modules: [Pagination],
             direction: 'horizontal',
             loop: false,
             pagination: {

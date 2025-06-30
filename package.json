@@ -1,0 +1,48 @@
+{
+  "name": "cps",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/tyulyubaevp/cps#readme",
+  "bugs": {
+    "url": "https://github.com/tyulyubaevp/cps/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyulyubaevp/cps.git"
+  },
+  "license": "ISC",
+  "author": "tyulyubaevp",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV='production' webpack --mode production",
+    "start": "cross-env NODE_ENV='development' webpack serve --mode development",
+    "dev": "cross-env NODE_ENV='development' webpack --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.7",
+    "@babel/preset-env": "^7.27.2",
+    "@eslint/js": "^9.30.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "eslint": "^9.30.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "globals": "^16.2.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "swiper": "^11.2.10"
+  }
+}
