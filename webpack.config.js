@@ -40,7 +40,7 @@ module.exports = {
             },
             {
                 test: /\.s?css$/,
-                use: [isProd ? MiniCssExtractPlugin.loader : 'style-loader', "css-loader", 'sass-loader'],
+                use: [isProd ? MiniCssExtractPlugin.loader : 'style-loader', "css-loader", 'postcss-loader', 'sass-loader'],
             }
         ]
     },

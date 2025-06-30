@@ -23,6 +23,7 @@
     "@babel/core": "^7.27.7",
     "@babel/preset-env": "^7.27.2",
     "@eslint/js": "^9.30.0",
+    "autoprefixer": "^10.4.21",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
@@ -34,6 +35,8 @@
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.1.1",
     "sass": "^1.89.2",
     "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
@@ -44,5 +47,10 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "swiper": "^11.2.10"
-  }
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
