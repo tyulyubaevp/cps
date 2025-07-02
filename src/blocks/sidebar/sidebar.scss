@@ -30,12 +30,20 @@
     height: 100%;
     padding: 18.8px 24px 32px 24px;
     overflow: auto;
+
+    @media screen and (min-width: 1120px) {
+      padding: 30px 30px 30px 22px;
+    }
   }
 
   &__top {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
+
+    @media screen and (min-width: 1120px) {
+      row-gap: 40px;
+    }
   }
 
   &__header {
@@ -89,6 +97,10 @@
     flex-direction: column;
     row-gap: 32px;
     list-style: none;
+
+     @media screen and (min-width: 1120px) {
+      row-gap: 28px;
+    }
   }
 
   &__menu-item {

@@ -133,7 +133,7 @@
   &__carousel-button {
     padding: 6px 15.54px;
     border-radius: 6px;
-    border: none;
+    border: 2px solid transparent;
     background: none;
     cursor: pointer;
     flex-shrink: 0;
@@ -147,8 +147,13 @@
       padding: 6px 19px;
     }
 
+    &:hover {
+      border-color: #b8ffec;
+      background: #ffffff;
+    }
+
     &_active {
-      border: 2px solid #b8ffec;
+      border-color: #b8ffec;
       background: #ffffff;
     }
   }
