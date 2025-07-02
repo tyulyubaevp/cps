@@ -10,7 +10,6 @@
   position: fixed;
   left: 0;
   top: 0;
-  box-shadow: 16px 0 52px #0e185033;
   z-index: 999;
   transform: translateX(-100%);
   transition: transform 0.3s;
@@ -220,4 +219,5 @@
 .sidebar_visible {
   transform: translateX(0);
   transition: transform 0.3s;
+  box-shadow: 16px 0 52px #0e185033;
 }
