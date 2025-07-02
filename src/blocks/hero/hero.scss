@@ -248,15 +248,12 @@
     width: 100%;
 
     @media screen and (min-width: 768px) {
-      height: 208px;
-      flex-basis: 360px;
+      flex-basis: 50%;
       flex-shrink: 0;
     }
 
     @media screen and (min-width: 1120px) {
-      height: 307px;
       max-width: 531.35px;
-      flex-basis: 531.35px;
     }
   }
 
