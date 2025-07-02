@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.svg" />
     <title>CPS</title>
   </head>
   <body>
     <header class="header">
       <div class="header__container">
         <div class="header__left">
-          <div class="header__icon">
+          <button type="button" class="header__icon header__menu-button">
             <img src="./assets/images/menu-icon.svg" />
-          </div>
+          </button>
           <div class="header__divider header__divider_left"></div>
           <div class="header__logo-container">
             <img class="header__logo" src="./assets/images/logo.svg" />
@@ -19,265 +20,428 @@
         </div>
         <div class="header__right">
           <div class="header__icon-group header__icon-group_left">
-            <div class="header__icon header__icon_tablet">
+            <button type="button" class="header__icon header__icon_tablet">
               <img src="./assets/images/phone-icon.svg" />
-            </div>
-            <div class="header__icon header__icon_tablet">
+            </button>
+            <button type="button" class="header__icon header__icon_tablet">
               <img src="./assets/images/message-icon.svg" />
-            </div>
-            <div class="header__icon header__icon_tablet">
+            </button>
+            <button type="button" class="header__icon header__icon_tablet">
               <img src="./assets/images/profile-icon.svg" />
-            </div>
+            </button>
           </div>
 
           <div class="header__divider header__divider_tablet"></div>
 
           <div class="header__icon-group header__icon-group_right">
-            <div class="header__icon">
+            <button type="button" class="header__icon">
               <img src="./assets/images/settings-icon.svg" />
-            </div>
-            <div class="header__icon">
+            </button>
+            <button type="button" class="header__icon">
               <img src="./assets/images/search-icon.svg" />
-            </div>
+            </button>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero__container">
-          <div class="hero__top">
-            <h1 class="hero__title">Услуги и сервисы</h1>
-            <div class="hero__buttons">
-              <div class="hero__button">
-                <p class="hero__icon-text">Оставить заявку</p>
-                <div class="hero__icon">
-                  <img src="./assets/images/settings-icon.svg" />
-                </div>
-              </div>
-              <div class="hero__button">
-                <p class="hero__icon-text">Статус ремонта</p>
-                <div class="hero__icon">
-                  <img src="./assets/images/search-icon.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero__carousel-container">
-            <div class="hero__carousel">
-              <button class="hero__carousel-button hero__carousel-button_active">Ремонтируемые бренды</button>
-              <button class="hero__carousel-button">Ремонтируемые устройства</button>
-              <button class="hero__carousel-button">Цена на услуги</button>
-              <button class="hero__carousel-button">Адреса сервисных центров</button>
-              <button class="hero__carousel-button">Специальные цены</button>
-              <button class="hero__carousel-button">Отзывы</button>
-            </div>
-          </div>
-
-          <div class="hero__info">
-            <div class="hero__content">
-              <div class="hero__text-container">
-                <p class="hero__text">
-                  Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                  отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                </p>
-                <p class="hero__text hero__text_second">
-                  Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-                </p>
-                <p class="hero__text hero__text_third">
-                  Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
-                  количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                  очередь, советуют нас родным и близким.
-                </p>
-              </div>
-
-              <div class="hero__more-button">
-                <img class="hero__expand-icon" src="./assets/images/expand-icon.svg" />
-                <p class="hero__more-button-text">Читать далее</p>
-              </div>
-            </div>
-            <div class="hero__image-container">
-              <img class="hero__image" src="./assets/images/image.png" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="brands">
-        <div class="brands__container">
-          <h2 class="brands__title">Ремонт техники различных брендов</h2>
-          <div class="swiper" id="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/lenovo.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/samsung.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/apple.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/viewsonic.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/bosch.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/hp.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/acer.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/sony.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/lenovo.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/samsung.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-              <div class="swiper-slide brands__brand-card">
-                <div class="brands__logo-container">
-                  <img class="brands__logo" src="./assets/images/brand-logos/apple.svg" />
-                </div>
-
-                <button class="brands__card-button">
-                  <img src="./assets/images/arrow-right-icon.svg" />
-                </button>
-              </div>
-            </div>
-            <div class="swiper-pagination" id="pagination"></div>
-          </div>
-          <div class="brands__more-button">
-            <img class="brands__expand-icon" src="./assets/images/expand-icon.svg" />
-            <p class="brands__more-button-text">Показать все</p>
-          </div>
-        </div>
-      </section>
-      <!-- <section class="sidebar">
-        <div class="sidebar__container">
-          <div class="sidebar__top">
-            <div class="sidebar__header">
-              <div class="sidebar__header-left">
-                <button class="sidebar__icon">
-                  <img src="./assets/images/close-icon.svg" />
-                </button>
-                <div class="sidebar__logo-container">
-                  <img class="sidebar__logo" src="./assets/images/logo.svg" />
-                </div>
-              </div>
-              <div class="sidebar__header-right">
-                <button class="sidebar__icon">
-                  <img src="./assets/images/magnifier-icon.svg" />
-                </button>
-              </div>
-            </div>
-            <nav class="sidebar__menu">
-              <ul class="sidebar__menu-list">
-                <li class="sidebar__menu-item sidebar__menu-item_active">Ремонт техники</li>
-                <li class="sidebar__menu-item">Услуги и сервисы</li>
-                <li class="sidebar__menu-item">Корпоративным клиентам</li>
-                <li class="sidebar__menu-item">Продавцам техники</li>
-                <li class="sidebar__menu-item">Партнерам</li>
-                <li class="sidebar__menu-item">Производителям</li>
-                <li class="sidebar__menu-item">Наши сервисные центры</li>
-                <li class="sidebar__menu-item">Контакты</li>
-              </ul>
-            </nav>
-          </div>
-          <div class="sidebar__bottom">
-            <div class="sidebar__footer">
-              <div class="sidebar__footer-top">
-                <div class="sidebar__footer-icons">
-                  <button class="sidebar__icon">
-                    <img src="./assets/images/phone-icon.svg" />
+      <div class="layout">
+        <div class="content">
+          <section class="hero">
+            <div class="hero__container">
+              <div class="hero__top">
+                <h1 class="hero__title">Услуги и сервисы</h1>
+                <div class="hero__buttons">
+                  <button type="button" class="hero__button">
+                    <p class="hero__icon-text">Оставить заявку</p>
+                    <div class="hero__icon">
+                      <img src="./assets/images/settings-icon.svg" />
+                    </div>
                   </button>
-                  <button class="sidebar__icon">
-                    <img src="./assets/images/message-icon.svg" />
-                  </button>
-                  <button class="sidebar__icon">
-                    <img src="./assets/images/profile-icon.svg" />
+                  <button type="button" class="hero__button">
+                    <p class="hero__icon-text">Статус ремонта</p>
+                    <div class="hero__icon">
+                      <img src="./assets/images/search-icon.svg" />
+                    </div>
                   </button>
                 </div>
-                <div class="sidebar__footer-contacts">
-                  <a href="mailto:mail@cps.com" class="sidebar__email">mail@cps.com</a>
-                  <a href="tel:+78008908900" class="sidebar__phone">8 800 890 8900</a>
+              </div>
+
+              <div class="hero__carousel-container">
+                <div class="hero__carousel">
+                  <button type="button" class="hero__carousel-button hero__carousel-button_active">
+                    Ремонтируемые бренды
+                  </button>
+                  <button type="button" class="hero__carousel-button">Ремонтируемые устройства</button>
+                  <button type="button" class="hero__carousel-button">Цена на услуги</button>
+                  <button type="button" class="hero__carousel-button">Адреса сервисных центров</button>
+                  <button type="button" class="hero__carousel-button">Специальные цены</button>
+                  <button type="button" class="hero__carousel-button">Отзывы</button>
                 </div>
               </div>
-              <div class="sidebar__footer-bottom">
-                <div class="sidebar__language-container">
-                  <button class="sidebar__language-button sidebar__language-button_active">RU</button>
-                  <button class="sidebar__language-button">EN</button>
-                  <button class="sidebar__language-button">CH</button>
+
+              <div class="hero__info">
+                <div class="hero__content">
+                  <div class="hero__text-container">
+                    <p class="hero__text">
+                      Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                      отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    </p>
+                    <p class="hero__text hero__text_second">
+                      Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                    </p>
+                    <p class="hero__text hero__text_third">
+                      Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                      количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                      очередь, советуют нас родным и близким.
+                    </p>
+                  </div>
+
+                  <div class="hero__more-button">
+                    <img class="hero__expand-icon" src="./assets/images/expand-icon.svg" />
+                    <p class="hero__more-button-text">Читать далее</p>
+                  </div>
+                </div>
+                <div class="hero__image-container">
+                  <img class="hero__image" src="./assets/images/image.png" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="brands">
+            <div class="brands__container">
+              <h2 class="brands__title">Ремонт техники различных брендов</h2>
+              <div class="swiper" id="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/lenovo.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/samsung.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/apple.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/viewsonic.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/bosch.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/hp.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/acer.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/sony.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/lenovo.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/samsung.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide brands__brand-card">
+                    <div class="brands__logo-container">
+                      <img class="brands__logo" src="./assets/images/brand-logos/apple.svg" />
+                    </div>
+
+                    <button type="button" class="brands__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-pagination" id="pagination"></div>
+              </div>
+              <div class="brands__more-button">
+                <img class="brands__expand-icon" src="./assets/images/expand-icon.svg" />
+                <p class="brands__more-button-text">Показать все</p>
+              </div>
+            </div>
+          </section>
+          <section class="devices">
+            <div class="devices__container">
+              <h2 class="devices__title">Ремонт различных видов техники</h2>
+              <div class="swiper" id="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide devices__device-card">
+                    <h2 class="devices__device-title">Ремонт ноутбуков</h2>
+
+                    <button type="button" class="devices__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide devices__device-card">
+                    <h2 class="devices__device-title">Ремонт планшетов</h2>
+
+                    <button type="button" class="devices__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide devices__device-card">
+                    <h2 class="devices__device-title">Ремонт ПК</h2>
+
+                    <button type="button" class="devices__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide devices__device-card">
+                    <h2 class="devices__device-title">Ремонт мониторов</h2>
+
+                    <button type="button" class="devices__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide devices__device-card">
+                    <h2 class="devices__device-title">Ремонт телефонов</h2>
+
+                    <button type="button" class="devices__card-button">
+                      <img src="./assets/images/arrow-right-icon.svg" />
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-pagination" id="pagination"></div>
+              </div>
+            </div>
+          </section>
+          <section class="prices">
+            <div class="prices__container">
+              <h2 class="prices__title">Цены на услуги</h2>
+              <div class="swiper" id="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide prices__price-card">
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Ремонтные услуги</h3>
+                      <p class="prices__value">Тестирование с выдачей технического заключения</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Цена</h3>
+                      <p class="prices__value">Бесплатно</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Срок</h3>
+                      <p class="prices__value">30-120 мин</p>
+                    </div>
+
+                    <button type="button" class="prices__card-button">
+                      <p class="prices__card-button-text">Заказать</p>
+                      <img src="./assets/images/arrow-right-icon-white.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide prices__price-card">
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Ремонтные услуги</h3>
+                      <p class="prices__value">Замена дисплея</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Цена</h3>
+                      <p class="prices__value">1000 ₽</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Срок</h3>
+                      <p class="prices__value">30-120 мин</p>
+                    </div>
+
+                    <button type="button" class="prices__card-button">
+                      <p class="prices__card-button-text">Заказать</p>
+                      <img src="./assets/images/arrow-right-icon-white.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide prices__price-card">
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Ремонтные услуги</h3>
+                      <p class="prices__value">Диагностика</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Цена</h3>
+                      <p class="prices__value">1000 ₽</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Срок</h3>
+                      <p class="prices__value">30 мин</p>
+                    </div>
+
+                    <button type="button" class="prices__card-button">
+                      <p class="prices__card-button-text">Заказать</p>
+                      <img src="./assets/images/arrow-right-icon-white.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide prices__price-card">
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Ремонтные услуги</h3>
+                      <p class="prices__value">Замена полифонического динамика</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Цена</h3>
+                      <p class="prices__value">1000 ₽</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Срок</h3>
+                      <p class="prices__value">30-120 мин</p>
+                    </div>
+
+                    <button type="button" class="prices__card-button">
+                      <p class="prices__card-button-text">Заказать</p>
+                      <img src="./assets/images/arrow-right-icon-white.svg" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide prices__price-card">
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Ремонтные услуги</h3>
+                      <p class="prices__value">Замена программного обеспечения</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Цена</h3>
+                      <p class="prices__value">1000 ₽</p>
+                    </div>
+                    <div class="prices__card-row">
+                      <h3 class="prices__label">Срок</h3>
+                      <p class="prices__value">30-120 мин</p>
+                    </div>
+
+                    <button type="button" class="prices__card-button">
+                      <p class="prices__card-button-text">Заказать</p>
+                      <img src="./assets/images/arrow-right-icon-white.svg" />
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-pagination" id="pagination"></div>
+              </div>
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="footer__container">
+              <p class="footer__text"><span>© 2019 CPS</span>Разработано командой Apesong</p>
+              <p class="footer__text">Политика конфиденциальности</p>
+              <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
+            </div>
+          </footer>
+        </div>
+        <section class="sidebar">
+          <div class="sidebar__container">
+            <div class="sidebar__top">
+              <div class="sidebar__header">
+                <div class="sidebar__header-left">
+                  <button type="button" class="sidebar__icon sidebar__close-button">
+                    <img src="./assets/images/close-icon.svg" />
+                  </button>
+                  <div class="sidebar__logo-container">
+                    <img class="sidebar__logo" src="./assets/images/logo.svg" />
+                  </div>
+                </div>
+                <div class="sidebar__header-right">
+                  <button type="button" class="sidebar__icon">
+                    <img src="./assets/images/magnifier-icon.svg" />
+                  </button>
+                </div>
+              </div>
+              <nav class="sidebar__menu">
+                <ul class="sidebar__menu-list">
+                  <li class="sidebar__menu-item sidebar__menu-item_active">Ремонт техники</li>
+                  <li class="sidebar__menu-item">Услуги и сервисы</li>
+                  <li class="sidebar__menu-item">Корпоративным клиентам</li>
+                  <li class="sidebar__menu-item">Продавцам техники</li>
+                  <li class="sidebar__menu-item">Партнерам</li>
+                  <li class="sidebar__menu-item">Производителям</li>
+                  <li class="sidebar__menu-item">Наши сервисные центры</li>
+                  <li class="sidebar__menu-item">Контакты</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="sidebar__bottom">
+              <div class="sidebar__footer">
+                <div class="sidebar__footer-top">
+                  <div class="sidebar__footer-icons">
+                    <button type="button" class="sidebar__icon">
+                      <img src="./assets/images/phone-icon.svg" />
+                    </button>
+                    <button type="button" class="sidebar__icon">
+                      <img src="./assets/images/message-icon.svg" />
+                    </button>
+                    <button type="button" class="sidebar__icon">
+                      <img src="./assets/images/profile-icon.svg" />
+                    </button>
+                  </div>
+                  <div class="sidebar__footer-contacts">
+                    <a href="mailto:mail@cps.com" class="sidebar__email">mail@cps.com</a>
+                    <a href="tel:+78008908900" class="sidebar__phone">8 800 890 8900</a>
+                  </div>
+                </div>
+                <div class="sidebar__footer-bottom">
+                  <div class="sidebar__language-container">
+                    <button type="button" class="sidebar__language-button sidebar__language-button_active">RU</button>
+                    <button type="button" class="sidebar__language-button">EN</button>
+                    <button type="button" class="sidebar__language-button">CH</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <div class="sidebar-overlay"></div> -->
+        </section>
+        <div class="sidebar-overlay"></div>
+      </div>
     </main>
   </body>
 </html>

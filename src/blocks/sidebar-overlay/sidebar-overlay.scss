@@ -6,9 +6,17 @@
   top: 0;
   left: 0;
   z-index: 998;
-  opacity: 96.05%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
 
   @media screen and (min-width: 1120px) {
     display: none;
   }
+}
+
+.sidebar-overlay_visible {
+  pointer-events: all;
+  transition: opacity 0.3s;
+  opacity: 96.05%;
 }

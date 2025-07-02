@@ -1,8 +1,8 @@
-@use '../../scss/vars' as *;
+@use '../../scss/vars';
+@use '../../scss/mixins';
 
 .hero {
   &__container {
-    padding: 24px 0 35px;
     display: flex;
     flex-direction: column;
     row-gap: 24px;
@@ -12,7 +12,7 @@
     }
 
     @media screen and (min-width: 1120px) {
-      padding: 42px 32px 49px 0;
+      padding: 42px 32px 0 0;
       row-gap: 8px;
     }
   }
@@ -64,10 +64,18 @@
   }
 
   &__button {
+    all: unset;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 8px;
+    cursor: pointer;
+
+    &:hover {
+      .hero__icon {
+        transform: scale(1.2);
+      }
+    }
   }
 
   &__icon-text {
@@ -78,14 +86,7 @@
   }
 
   &__icon {
-    width: 40px;
-    height: 40px;
-    background-color: $accent-color;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    @include mixins.icon-style;
   }
 
   &__carousel-container {
@@ -243,6 +244,7 @@
   }
 
   &__image-container {
+    display: flex;
     width: 100%;
 
     @media screen and (min-width: 768px) {

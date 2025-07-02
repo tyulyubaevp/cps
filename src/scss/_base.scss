@@ -4,6 +4,7 @@
 
 h1,
 h2,
+h3,
 p,
 ul,
 li {
@@ -15,6 +16,30 @@ body {
   font-family: 'TT Lakes';
   background-color: #f8f8f8;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    row-gap: 32px;
+  }
+
+  @media screen and (min-width: 1120px) {
+    row-gap: 50px;
+  }
+}
+
+.layout {
+  @media screen and (min-width: 1120px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 #swiper {
@@ -52,12 +77,28 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 72px;
 
     &.hidden {
       @media screen and (min-width: 768px) {
         display: none;
       }
+    }
+
+    &.brands__brand-card {
+      height: 72px;
+    }
+
+    &.devices__device-card {
+      height: 160px;
+    }
+
+    &.prices__price-card {
+      align-self: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 200px;
+      max-width: 280px;
     }
   }
 
@@ -80,7 +121,7 @@ body {
     padding: 0 32px;
 
     .swiper-wrapper {
-      grid-template-columns: repeat(4, 240px);
+      grid-template-columns: repeat(auto-fill, 240px);
       gap: 16px 32px;
     }
 
