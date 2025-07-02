@@ -3,13 +3,14 @@ import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
+const swiperContainers = document.querySelectorAll('.swiper');
 const brands = document.querySelectorAll('.brands__brand-card')
 const toggleBrandsButton = document.querySelector('.brands__more-button')
 const toggleBrandsButtonText = toggleBrandsButton.querySelector('.brands__more-button-text')
 const toggleBrandsButtonExpandIcon = toggleBrandsButton.querySelector('.brands__expand-icon')
 let expanded = false;
-let swiper = null;
 let limit = 6;
+let swipers = [];
 
 function updateVisibleCardsLimit() {
     limit = window.innerWidth < 1120 ? 6 : 8
@@ -39,24 +40,28 @@ function toggleSwiper() {
 
     updateVisibleCardsLimit()
 
-    if (isMobile && !swiper) {
-        swiper = new Swiper('.swiper', {
-            modules: [Pagination],
-            direction: 'horizontal',
-            loop: false,
-            pagination: {
-                clickable: true,
-                el: '.swiper-pagination',
-            },
-            grabCursor: true,
-            slidesPerView: 'auto',
-            spaceBetween: 16,
+    if (isMobile && swipers.length === 0) {
+      swiperContainers.forEach(container => {
+        const swiperInstance = new Swiper(container, {
+          modules: [Pagination],
+          direction: 'horizontal',
+          loop: false,
+          pagination: {
+            clickable: true,
+            el: container.querySelector('.swiper-pagination'),
+          },
+          grabCursor: true,
+          slidesPerView: 'auto',
+          spaceBetween: 16,
         })
+
+        swipers.push(swiperInstance)
+      })
     }
 
-    if (!isMobile && swiper) {
-        swiper.destroy(true, true)
-        swiper = null
+    if (!isMobile && swipers.length > 0) {
+        swipers.forEach(swiperInstance => swiperInstance.destroy(true, true))
+        swipers = []
     }
 
     showCards();
