@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   row-gap: 24px;
 
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1440px) {
     align-items: center;
   }
 }
@@ -43,6 +43,7 @@ body {
   @media screen and (min-width: 1120px) {
     display: flex;
     flex-direction: row-reverse;
+    max-width: 1920px;
   }
 }
 

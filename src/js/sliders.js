@@ -22,7 +22,20 @@ let swipers = [];
 
 function updateVisibleCardsLimit() {
   brandsLimit = window.innerWidth < 1120 ? 6 : 8
-  devicesLimit = window.innerWidth < 1120 ? 3 : 4
+  // devicesLimit = window.innerWidth < 1120 ? 3 : 4
+
+  if (window.innerWidth < 768) {
+    toggleDevicesButton.style.display = 'none'
+  } else if (window.innerWidth > 768 && window.innerWidth < 1120) {
+    devicesLimit = 3
+    toggleDevicesButton.style.display = 'flex'
+  } else if (window.innerWidth > 1120 && window.innerWidth < 1715) {
+    devicesLimit = 4;
+    toggleDevicesButton.style.display = 'flex'
+  } else if (window.innerWidth > 1715) {
+    devicesLimit = 5
+    toggleDevicesButton.style.display = 'none'
+  }
 }
 
 function showBrandCards() {
