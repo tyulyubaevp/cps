@@ -1,0 +1,10 @@
+@use 'normalize-scss';
+@use 'base';
+@use 'mixins';
+@use 'vars';
+
+@use '../assets/fonts/fonts.scss';
+@use '../blocks/header/header.scss';
+@use '../blocks/hero/hero';
+@use '../blocks/sidebar/sidebar';
+@use '../blocks/brands/brands';

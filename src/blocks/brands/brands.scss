@@ -1,0 +1,98 @@
+@use '../../scss/vars' as *;
+
+.brands {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    min-width: 0;
+  }
+
+  &__title {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7e7e82;
+    background: linear-gradient(to right, #f8f8f8, #ffffff);
+    border-top: 1px solid #d9fff5;
+
+    @media screen and (min-width: 768px) {
+      padding: 16px 24px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      padding: 16px 32px;
+    }
+  }
+
+  &__brand-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+  }
+
+  &__logo-container {
+    display: block;
+  }
+
+  &__logo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__card-button {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 13px 12px 15px;
+    border: 2px solid $accent-color;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s;
+    }
+  }
+
+  &__more-button {
+    display: none;
+    align-items: center;
+    column-gap: 8px;
+    cursor: pointer;
+    padding-left: 24px;
+    color: #1b1c21;
+    max-width: max-content;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 1120px) {
+      padding-left: 32px;
+    }
+  }
+
+  &__expand-icon {
+    transition: transform 0.5s;
+
+    &_active {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__more-button-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+}

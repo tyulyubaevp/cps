@@ -1,0 +1,14 @@
+.sidebar-overlay {
+  position: fixed;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  opacity: 96.05%;
+
+  @media screen and (min-width: 1120px) {
+    display: none;
+  }
+}
