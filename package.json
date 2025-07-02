@@ -2,7 +2,7 @@
   "name": "cps",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/tyulyubaevp/cps#readme",
+  "homepage": "https://solistenebrum.github.io/cps",
   "bugs": {
     "url": "https://github.com/tyulyubaevp/cps/issues"
   },
@@ -17,7 +17,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV='production' webpack --mode production",
     "start": "cross-env NODE_ENV='development' webpack serve --mode development",
-    "dev": "cross-env NODE_ENV='development' webpack --mode development"
+    "dev": "cross-env NODE_ENV='development' webpack --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d app"
   },
   "devDependencies": {
     "@babel/core": "^7.27.7",
@@ -31,6 +33,7 @@
     "eslint": "^9.30.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.5.1",
+    "gh-pages": "^6.3.0",
     "globals": "^16.2.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
