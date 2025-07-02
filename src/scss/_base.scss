@@ -19,6 +19,10 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+
+  @media screen and (min-width: 1920px) {
+    align-items: center;
+  }
 }
 
 .content {
@@ -112,8 +116,23 @@ body {
       transform: none !important;
     }
 
+    .swiper-wrapper.prices__grid {
+      grid-template-columns: initial;
+      gap: initial;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
     .swiper-slide {
       max-width: 224px;
+    }
+
+    .swiper-slide.prices__price-card {
+      max-width: initial;
+      display: grid;
+      height: initial;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 
