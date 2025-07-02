@@ -9966,7 +9966,7 @@ let devicesLimit = 3;
 let swipers = [];
 function updateVisibleCardsLimit() {
   brandsLimit = window.innerWidth < 1120 ? 6 : 8;
-  devicesLimit = window.innerWidth < 1120 ? 3 : 6;
+  devicesLimit = window.innerWidth < 1120 ? 3 : 4;
 }
 function showBrandCards() {
   brands.forEach((brandCard, index) => {
