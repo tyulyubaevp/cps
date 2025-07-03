@@ -12,6 +12,11 @@ li {
   padding: 0;
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
 body {
   font-family: 'TT Lakes';
   background-color: #f8f8f8;
@@ -43,7 +48,7 @@ body {
   @media screen and (min-width: 1120px) {
     display: flex;
     flex-direction: row-reverse;
-    max-width: 1920px;
+    max-width: 1720px;
   }
 }
 
