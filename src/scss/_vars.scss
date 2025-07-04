@@ -11,9 +11,12 @@ $color-card-border: #eaeaea;
 $color-divider: #eaeaea;
 $color-placeholder: #b5b6bc;
 $gradient-surface: linear-gradient(to right, $color-background, $color-surface);
-
 $bullet-base-color: #dddddd;
 $bullet-active-color: #b5b6bc;
+
+$padding-mobile: 16px;
+$padding-tablet: 16px 24px;
+$padding-desktop: 16px 32px;
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1120px;

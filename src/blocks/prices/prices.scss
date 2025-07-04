@@ -14,7 +14,7 @@
   }
 
   &__title {
-    padding: 16px;
+    padding: vars.$padding-mobile;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -24,11 +24,11 @@
     background: vars.$gradient-surface;
 
     @media screen and (min-width: vars.$breakpoint-tablet) {
-      padding: 16px 24px;
+      padding: vars.$padding-tablet;
     }
 
     @media screen and (min-width: vars.$breakpoint-desktop) {
-      padding: 16px 32px;
+      padding: vars.$padding-desktop;
     }
   }
 
