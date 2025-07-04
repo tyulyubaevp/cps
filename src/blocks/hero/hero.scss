@@ -105,6 +105,16 @@
       left: 0;
       top: 0;
     }
+
+    @media screen and (min-width: vars.$breakpoint-desktop) {
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
   }
 
   &__carousel {
@@ -135,7 +145,7 @@
     color: vars.$color-text-secondary;
 
     @media screen and (min-width: vars.$breakpoint-desktop) {
-      padding: 6px 19px;
+      padding: 6px 16px;
     }
 
     &:hover {
