@@ -26,11 +26,8 @@
   }
 
   &__title {
+    @include mixins.text-style(28, 700, 40, -0.6);
     padding-left: 16px;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: -0.6px;
     position: relative;
 
     &::before {
@@ -79,10 +76,7 @@
   }
 
   &__icon-text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
+    @include mixins.text-style(16, 500, 24, -0.2);
   }
 
   &__icon {
@@ -131,6 +125,7 @@
   }
 
   &__carousel-button {
+    @include mixins.text-style(16, 500, 24, -0.2);
     padding: 6px 15.54px;
     border-radius: 6px;
     border: 2px solid transparent;
@@ -138,10 +133,6 @@
     cursor: pointer;
     flex-shrink: 0;
     color: vars.$color-text-secondary;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
 
     @media screen and (min-width: vars.$breakpoint-desktop) {
       padding: 6px 19px;
@@ -203,10 +194,7 @@
   }
 
   &__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.2px;
+    @include mixins.text-style(14, 400, 18, 0.2);
 
     @media screen and (min-width: vars.$breakpoint-tablet) {
       line-height: 20px;
@@ -241,10 +229,7 @@
   }
 
   &__more-button-text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
+    @include mixins.text-style(16, 500, 24, -0.2);
   }
 
   &__image-container {

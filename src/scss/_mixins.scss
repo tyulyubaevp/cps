@@ -12,3 +12,10 @@
   cursor: pointer;
   transition: transform 0.3s;
 }
+
+@mixin text-style($size, $weight, $line-height, $letter-spacing) {
+  font-size: $size * 1px;
+  font-weight: $weight;
+  line-height: $line-height * 1px;
+  letter-spacing: $letter-spacing * 1px;
+}

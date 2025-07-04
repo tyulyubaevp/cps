@@ -1,4 +1,5 @@
 @use '../../scss/vars';
+@use '../../scss/mixins';
 
 .prices {
   &__container {
@@ -14,11 +15,8 @@
   }
 
   &__title {
+    @include mixins.text-style(16, 400, 24, -0.2);
     padding: vars.$padding-mobile;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.2px;
     text-transform: uppercase;
     color: vars.$color-text-secondary;
     background: vars.$gradient-surface;
@@ -66,11 +64,8 @@
   }
 
   &__label {
+    @include mixins.text-style(14, 500, 16, 0);
     color: vars.$color-text-secondary;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0;
 
     @media screen and (min-width: vars.$breakpoint-tablet) {
       display: none;
@@ -78,10 +73,7 @@
   }
 
   &__value {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
+    @include mixins.text-style(14, 400, 18, 0.2);
   }
 
   &__card-button {
@@ -111,11 +103,8 @@
   }
 
   &__card-button-text {
+    @include mixins.text-style(12, 700, 24, -0.15);
     color: vars.$color-text-white;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: -0.15px;
     text-transform: uppercase;
   }
 
@@ -136,17 +125,11 @@
   }
 
   &__commercial-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
+    @include mixins.text-style(14, 400, 20, 0.2);
   }
 
   &__commercial-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
+    @include mixins.text-style(14, 500, 24, -0.2);
     cursor: pointer;
     position: relative;
 
@@ -164,11 +147,8 @@
   }
 
   &__headings {
+    @include mixins.text-style(14, 500, 16, 0);
     color: vars.$color-text-secondary;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0px;
     display: none;
     padding-left: 20px;
     width: 100%;

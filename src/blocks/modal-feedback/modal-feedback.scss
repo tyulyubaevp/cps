@@ -64,10 +64,7 @@
   }
 
   &__title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: -0.6px;
+    @include mixins.text-style(24, 700, 32, -0.6);
     position: relative;
 
     &::before {
@@ -100,20 +97,14 @@
     color: vars.$color-text-primary;
 
     &::placeholder {
+      @include mixins.text-style(16, 500, 24, -0.2);
       color: vars.$color-placeholder;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.2px;
     }
   }
 
   &__text {
+    @include mixins.text-style(14, 500, 16, 0);
     color: vars.$color-text-secondary;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0;
   }
 
   &__span {
@@ -140,11 +131,8 @@
   }
 
   &__send-button-text {
+    @include mixins.text-style(12, 700, 24, -0.15);
     color: vars.$color-text-white;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: -0.15px;
     text-transform: uppercase;
   }
 }
