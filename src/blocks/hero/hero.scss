@@ -199,10 +199,7 @@
   &__text-container {
     display: flex;
     flex-direction: column;
-
-    @media screen and (min-width: vars.$breakpoint-tablet) {
-      row-gap: 20px;
-    }
+    row-gap: 20px;
   }
 
   &__text {
@@ -220,16 +217,28 @@
       }
 
       @media screen and (min-width: vars.$breakpoint-desktop) {
-        display: none;
+        display: inline;
       }
     }
 
     &_third {
       display: none;
+    }
 
-      @media screen and (min-width: vars.$breakpoint-desktop) {
-        display: block;
-      }
+    &_visible {
+      display: inline;
+    }
+  }
+
+  &__add-text {
+    display: none;
+
+    @media screen and (min-width: vars.$breakpoint-desktop) {
+      display: inline;
+    }
+
+    &_visible {
+      display: inline;
     }
   }
 
@@ -242,6 +251,14 @@
 
   &__more-button-text {
     @include mixins.text-style(16, 500, 24, -0.2);
+  }
+
+  &__expand-icon {
+    transition: transform 0.5s;
+
+    &_active {
+      transform: rotate(-180deg);
+    }
   }
 
   &__image-container {
