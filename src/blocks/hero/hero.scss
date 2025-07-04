@@ -148,9 +148,11 @@
       padding: 6px 16px;
     }
 
-    &:hover {
-      border-color: vars.$color-button-outline;
-      background: vars.$color-surface;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        border-color: vars.$color-button-outline;
+        background: vars.$color-surface;
+      }
     }
 
     &_active {
