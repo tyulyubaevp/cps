@@ -1,4 +1,19 @@
-$accent-color: #ff3e79; // accent icon
-// --1: #f8f8f8; // grey background gradient
-// --2 #dddddd // base bullet
-// --3 #b5b6bc bullet active
+$color-accent: #ff3e79;
+$color-text-primary: #1b1c21;
+$color-text-secondary: #7E7E82;
+$color-text-white: #ffffff;
+$color-background: #f8f8f8;
+$color-surface: #ffffff;
+$color-button-outline: #b8ffec;
+$color-border: #D9FFF5;
+$color-selected-menu-item: #41F6D7;
+$color-card-border: #eaeaea;
+$color-divider: #eaeaea;
+$color-placeholder: #b5b6bc;
+$gradient-surface: linear-gradient(to right, $color-background, $color-surface);
+
+$bullet-base-color: #dddddd;
+$bullet-active-color: #b5b6bc;
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1120px;

@@ -2,6 +2,7 @@
 @use 'base';
 @use 'mixins';
 @use 'vars';
+@use 'reset';
 
 @use '../assets/fonts/fonts.scss';
 @use '../blocks/header/header.scss';

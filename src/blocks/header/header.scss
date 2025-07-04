@@ -2,7 +2,7 @@
 @use '../../scss/mixins';
 
 .header {
-  @media screen and (min-width: 1120px) {
+  @media screen and (min-width: vars.$breakpoint-desktop) {
     display: none;
   }
 
@@ -11,10 +11,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff;
-    border-bottom: 1px solid #d9fff5;
+    background-color: vars.$color-surface;
+    border-bottom: 1px solid vars.$color-border;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: vars.$breakpoint-tablet) {
       padding: 18.59px 24px;
     }
   }
@@ -24,7 +24,7 @@
     align-items: center;
     column-gap: 16.73px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: vars.$breakpoint-tablet) {
       column-gap: 20px;
     }
   }
@@ -49,7 +49,7 @@
     &_tablet {
       display: none;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: vars.$breakpoint-tablet) {
         display: flex;
       }
     }
@@ -57,13 +57,13 @@
   &__divider {
     height: 32px;
     width: 2px;
-    background-color: #eaeaea;
+    background-color: vars.$color-divider;
     border-radius: 1px;
 
     &_left {
       display: none;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: vars.$breakpoint-tablet) {
         display: block;
         margin-right: 0px;
       }
@@ -87,7 +87,7 @@
     &_left {
       display: none;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: vars.$breakpoint-tablet) {
         display: flex;
       }
     }

@@ -1,25 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: unset;
-  text-decoration: none;
-}
+@use 'vars';
 
 body {
   font-family: 'TT Lakes';
-  background-color: #f8f8f8;
+  background-color: vars.$color-background;
+  color: vars.$color-text-primary;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -35,17 +19,17 @@ body {
   flex-direction: column;
   row-gap: 24px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: vars.$breakpoint-tablet) {
     row-gap: 32px;
   }
 
-  @media screen and (min-width: 1120px) {
+  @media screen and (min-width: vars.$breakpoint-desktop) {
     row-gap: 50px;
   }
 }
 
 .layout {
-  @media screen and (min-width: 1120px) {
+  @media screen and (min-width: vars.$breakpoint-desktop) {
     display: flex;
     flex-direction: row-reverse;
     max-width: 1920px;
@@ -64,7 +48,7 @@ body {
     position: absolute;
     height: 100%;
     width: 20px;
-    background: linear-gradient(to left, #f8f8f8 30%, transparent);
+    background: linear-gradient(to left, vars.$color-background 30%, transparent);
     right: 0;
     top: 0;
     z-index: 5;
@@ -75,7 +59,7 @@ body {
     position: absolute;
     height: 100%;
     width: 20px;
-    background: linear-gradient(to right, #f8f8f8 30%, transparent);
+    background: linear-gradient(to right, vars.$color-background 30%, transparent);
     left: 0;
     top: 0;
     z-index: 5;
@@ -90,7 +74,7 @@ body {
     background-color: #fff;
 
     &.hidden {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: vars.$breakpoint-tablet) {
         display: none;
       }
     }
@@ -113,7 +97,7 @@ body {
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: vars.$breakpoint-tablet) {
     padding: 0 24px;
 
     .swiper-wrapper {
@@ -143,7 +127,7 @@ body {
     }
   }
 
-  @media screen and (min-width: 1120px) {
+  @media screen and (min-width: vars.$breakpoint-desktop) {
     padding: 0 32px;
 
     .swiper-wrapper {
@@ -161,17 +145,17 @@ body {
   position: static;
 
   .swiper-pagination-bullet {
-    background-color: #dddddd;
+    background-color: vars.$bullet-base-color;
     opacity: 1;
     width: 12px;
     height: 12px;
   }
 
   .swiper-pagination-bullet-active {
-    background-color: #b5b6bc;
+    background-color: vars.$bullet-active-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: vars.$breakpoint-tablet) {
     display: none;
   }
 }

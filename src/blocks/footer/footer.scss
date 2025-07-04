@@ -1,13 +1,15 @@
+@use '../../scss/vars';
+
 .footer {
   &__container {
     padding: 16px 4px;
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    border-top: 1px solid #d9fff5;
+    border-top: 1px solid vars.$color-border;
     align-items: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: vars.$breakpoint-tablet) {
       padding: 32px 24px;
       flex-direction: row;
       align-items: flex-start;
@@ -21,10 +23,10 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0;
-    color: #7e7e82;
+    color: vars.$color-text-secondary;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: vars.$breakpoint-tablet) {
     }
 
     &:first-child {
@@ -32,14 +34,14 @@
       flex-direction: column;
       max-width: 218px;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: vars.$breakpoint-tablet) {
         text-align: left;
       }
     }
 
     &:last-child {
       max-width: 312px;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: vars.$breakpoint-tablet) {
         text-align: right;
         max-width: 213px;
       }

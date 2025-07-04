@@ -1,6 +1,8 @@
+@use '../../scss/vars';
+
 .sidebar-overlay {
   position: fixed;
-  background-color: #ffffff;
+  background-color: vars.$color-surface;
   height: 100%;
   width: 100%;
   top: 0;
@@ -10,7 +12,7 @@
   transition: opacity 0.3s;
   pointer-events: none;
 
-  @media screen and (min-width: 1120px) {
+  @media screen and (min-width: vars.$breakpoint-desktop) {
     display: none;
   }
 }

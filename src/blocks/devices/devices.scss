@@ -6,6 +6,7 @@
     flex-direction: column;
     row-gap: 16px;
     min-width: 0;
+    border-top: 1px solid vars.$color-border;
   }
 
   &__title {
@@ -15,15 +16,14 @@
     line-height: 24px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
-    color: #7e7e82;
-    background: linear-gradient(to right, #f8f8f8, #ffffff);
-    border-top: 1px solid #d9fff5;
+    color: vars.$color-text-secondary;
+    background: vars.$gradient-surface;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: vars.$breakpoint-tablet) {
       padding: 16px 24px;
     }
 
-    @media screen and (min-width: 1120px) {
+    @media screen and (min-width: vars.$breakpoint-desktop) {
       padding: 16px 32px;
     }
   }
@@ -33,12 +33,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 16px;
-    border: 1px solid #eaeaea;
+    border: 1px solid vars.$color-card-border;
     border-radius: 6px;
   }
 
   &__device-title {
-    color: #1b1c21;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -52,7 +51,7 @@
     justify-content: center;
     align-items: center;
     padding: 12px 13px 12px 15px;
-    border: 2px solid vars.$accent-color;
+    border: 2px solid vars.$color-accent;
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.3s;
@@ -70,14 +69,13 @@
     column-gap: 8px;
     cursor: pointer;
     padding-left: 24px;
-    color: #1b1c21;
     max-width: max-content;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: vars.$breakpoint-tablet) {
       display: flex;
     }
 
-    @media screen and (min-width: 1120px) {
+    @media screen and (min-width: vars.$breakpoint-desktop) {
       padding-left: 32px;
     }
   }

@@ -1,6 +1,9 @@
+@use '../../scss/vars';
+@use '../../scss/mixins';
+
 .modal-overlay {
   position: fixed;
-  background-color: #ffffff;
+  background-color: vars.$color-surface;
   height: 100%;
   width: 100%;
   top: 0;
