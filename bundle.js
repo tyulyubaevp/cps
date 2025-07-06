@@ -9987,13 +9987,13 @@ let brandsLimit = 6;
 let devicesLimit = 3;
 let swipers = [];
 function updateVisibleCardsLimit() {
-  brandsLimit = window.innerWidth < 1120 ? 6 : 8;
+  brandsLimit = window.innerWidth < 1440 ? 6 : 8;
   if (window.innerWidth < 768) {
     toggleDevicesButton.style.display = 'none';
-  } else if (window.innerWidth > 768 && window.innerWidth < 1120) {
+  } else if (window.innerWidth > 768 && window.innerWidth < 1440) {
     devicesLimit = 3;
     toggleDevicesButton.style.display = 'flex';
-  } else if (window.innerWidth > 1120 && window.innerWidth < 1715) {
+  } else if (window.innerWidth > 1440 && window.innerWidth < 1715) {
     devicesLimit = 4;
     toggleDevicesButton.style.display = 'flex';
   } else if (window.innerWidth > 1715) {
