@@ -132,6 +132,11 @@
     @include mixins.text-style(14, 500, 24, -0.2);
     cursor: pointer;
     position: relative;
+    max-width: 192px;
+
+    @media screen and (min-width: vars.$breakpoint-tablet) {
+      max-width: none;
+    }
 
     &::after {
       content: '';
